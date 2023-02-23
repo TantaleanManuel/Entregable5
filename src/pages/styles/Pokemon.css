@@ -1,0 +1,36 @@
+.pokemon_stat-barGray {
+    background-color: #efcccc;
+    height: 25px;
+}
+
+.pokemon_stat-barProgress {
+    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+    height: 25px;
+    width: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pokemon_ability {
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr ));
+}
+
+.pokemonPage {
+
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.pokemon_stats-info {
+    align-items: center;
+}
+
+.pokemon_stats-title {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}

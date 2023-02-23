@@ -1,0 +1,35 @@
+.Home{
+    margin-top: 300px;
+    margin: 100px 100px;
+    border-color: #dd1a1a;
+}
+
+.Home_img {
+    width: min(400px, calc(100% -20px)) ;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+}
+
+.Home_greeting{
+    font-size: 30px;
+    color: red;
+}
+
+.Home_form {
+    color: red;   
+}
+
+.Home_input {
+    color: blue;   
+}
+
+.Home_buttom{
+    color: red;   
+}
+
+.Home_foot {
+    height:100px ;
+    background-color: #dd1a1a ;
+    position: relative;
+}
