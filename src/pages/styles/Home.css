@@ -4,6 +4,13 @@
     border-color: #dd1a1a;
 }
 
+.Home_mensaje {
+    font-size: 20px;
+    font-family: Impact;
+    font-style: italic;
+    color: black;
+}
+
 .Home_img {
     width: min(400px, calc(100% -20px)) ;
     position: absolute;
@@ -21,11 +28,21 @@
 }
 
 .Home_input {
-    color: blue;   
+    color: blue;
+    font-size: 18px;   
 }
 
 .Home_buttom{
-    color: red;   
+    padding: 6px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    color: white;   
+
 }
 
 .Home_foot {

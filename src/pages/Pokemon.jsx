@@ -14,7 +14,8 @@ const Pokemon = () => {
   }
 
   useEffect(() => {
-    const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
+    const URL = `https://pokeapi.co/api/v2/pokemon/${id}/?limit=1154`
+    //  const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
     axios.get(URL)
     .then((res) => setPokemon(res.data))
     .catch((err) => console.log(err))
@@ -25,7 +26,7 @@ const Pokemon = () => {
     <main >
       {/* parte superior */}
     <section >
-      <section>
+      <section className='Pokemon'>
         <div >
           <img src={pokemon?.sprites.other["official-artwork"].front_default} alt="" />
         </div>
@@ -37,37 +38,38 @@ const Pokemon = () => {
     <h2 className='pokemon_stats-title'># {pokemon?.id}</h2>
     <h2 className='pokemon_stats-title'>{pokemon?.name}</h2> 
 
-    <div >
-      <div className='pokemon_ability'>
-        <h5 >Weigth</h5>
-        <h4>{pokemon?.weight}</h4>
+    {/* Box 1 */}
+    <div className='pokemon_box1'>
+      <div className='pokemon_left'>
+      <h4 className='pokemon_title'>{pokemon?.weight}</h4>
+      <h5 className='pokemon_title' >Weigth</h5>
       </div>
 
-      <div className='pokemon_ability'>
-        <h5 className='pokemon_stats-title'>Heigth</h5>
-        <h4 className='pokemon_stats-title'>{pokemon?.height}</h4>
+      <div className='pokemon_rigth'>
+        <h4 className='pokemon_title'>{pokemon?.height}</h4>
+        <h5 className='pokemon_title'>Heigth</h5>
       </div>
     </div>
 
-    <div >
-      <div>
-        <h3 className='pokemon_stats-title'>Type</h3>
+    <div className="box2">
+      <div >
+         <div><h3 className='pokemon_title'>Type</h3></div>
         <div className='pokemon_stats-title'>
         {
            pokemon?.types.map((type) => (
-           <div key={type.type.name}>
-            <span>{type.type.name}</span>
+           <div  key={type.type.name}>
+            <span><button className="pokemon_button" >{type.type.name}</button></span>
             </div>
         ))}
         </div>
       </div>
       <div>
-      <h3 className='pokemon_stats-title'>Abilities</h3>
+      <h3 className='pokemon_title'>Abilities</h3>
           <div className='pokemon_stats-title'>
           {
           pokemon?.abilities.map((ability) => (
           <div key={ability.ability.name}>
-            <span>{ability.ability.name}</span>
+            <span><button className="pokemon_button" >{ability.ability.name}</button></span>
             </div>
           ))}
           </div>

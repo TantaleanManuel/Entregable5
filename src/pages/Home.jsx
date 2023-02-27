@@ -21,7 +21,7 @@ const Home = () => {
           <img src="/images/pokedex.png" alt="" />
           </div>
           <h2 className='Home_greeting'>Hello trainer!</h2>
-          <p>Give me your name to start!</p>
+          <p className='Home_mensaje'>Give me your name to start!</p>
           <form className='Home_form' onSubmit={handleSubmit}>
             <input  className='Home_input' required
             id="nameTrainer" 

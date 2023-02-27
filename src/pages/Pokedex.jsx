@@ -20,17 +20,17 @@ const Pokedex = () => {
   } = usePokedex() 
   
   return (
-    <main style={{maxWidth: "1400px", margin:"20px auto" }}>
-    <p><span> Welcome {nameTrainer},</span> here you can find information about your favorite pokemon</p>
+    <main  style={{maxWidth: "1400px", margin:"20px auto" }}>
+    <p className='Pokedex_mensaje' ><span> Welcome {nameTrainer},</span> here you can find information about your favorite pokemon</p>
     <form onSubmit={handleSubmit}>
       <div>
-      <input type="text" id='pokemonName' placeholder='search your pokemon' />
-        <button>Search</button>
-      </div>
-      <select onChange={handleChangeSelect} >  
-        <option value="">All</option>
+      <input className='Pokedex_search' type="text" id='pokemonName' placeholder='search your pokemon' />
+        <button className='Pokedex_search'>Search</button>
+      </div >
+      <select Pokedex_search onChange={handleChangeSelect} >  
+        <option  Pokedex_search value="">All</option>
         {
-           types.map(type => <option key={type.url}> {type.name}</option>)
+           types.map(type => <option  key={type.url}>  {type.name}</option>)
         }
       </select>
     </form>
@@ -40,18 +40,17 @@ const Pokedex = () => {
         
       }
       </section >
+
         <section >
-        <ul >
-        <button className='Pokedex_numeros'>
-          <li  onClick={handlePreviousPage}><button>{"<<"}</button>  </li>
-          <li   onClick={() => setCurrentPage()} ></li>
-       
+        <ul className='Pokedex_numero'>
+                 <li  onClick={handlePreviousPage}><button  className='Pokedex_button' >{ "<<"} </button> </li>
+          <li   onClick={() => setCurrentPage()}></li>
+          
         {
-        pagesInBlock.map(page => <li onClick={() => setCurrentPage(page)} key={page}>{page}</li> )
+        pagesInBlock.map(page => <li  onClick={() => setCurrentPage(page)} key={page}>{page}</li> )
         } 
        
-        <li  onClick={() => setCurrentPage(lastPage)}> <button>{">>"}</button>  </li>
-        </button>
+        <li  onClick={() => setCurrentPage(lastPage)}> <button className='Pokedex_button'>{">>"}</button> </li>
         <li  onClick={handleNextPage}></li>
         </ul>
         </section>

@@ -1,5 +1,101 @@
+.Pokemon {
+    background-color: rgb(83, 236, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pokemon_stats-title {
+display: flex;
+font-style: inherit;
+justify-content: center;
+align-items: center;
+text-transform: capitalize;
+}
+
+.pokemon_box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: 18px;
+  
+    
+}
+
+.pokemon_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 200px;
+}
+
+.pokemon_rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 200px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+  }
+  
+  .box:last-child {
+    margin-right: 0;
+  }
+  
+  .pokemon_stats-title {
+    text-align: center;
+  }
+
+  .pokemon_title {
+    font-family: fantasy;
+    font-weight: 300;
+    font-size: 30px solid;
+}
+  
+.Pokemon_title0{
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+
+  .pokemon_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pokemon_button {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: Georgia;
+    text-transform: capitalize;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 50px;
+    background-color: rgb(79, 214, 237);
+  }
+  
+
+.Pokemon_title1{
+    background-color: white;
+}
+
+
 .pokemon_stat-barGray {
-    background-color: #efcccc;
+    background-color: #daf3aa;
     height: 25px;
 }
 
@@ -19,18 +115,11 @@
 }
 
 .pokemonPage {
-
     display: flex;
     align-items: center;
     color: red;
 }
 
 .pokemon_stats-info {
-    align-items: center;
-}
-
-.pokemon_stats-title {
-        display: flex;
-    justify-content: center;
     align-items: center;
 }
