@@ -1,19 +1,27 @@
 .Pokedex_mensaje {
     font-style: italic solid;
     font-size: large;
-
 }
 
 .Pokedex_search{
     font-size: 18px;
     font-family: 'Franklin Gothic Medium';
+    color: black;
 }
 
+.Pokedex_search1 {
+    font-size: 15px;
+    font-family: Impact;
+    color: black;
+}
 .Pokedex_pagina {
     display: grid;
     grid-auto-columns: auto;
     font-family: Helvetica;
+    max-width: 1200px;
+    margin-left: 70px;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr ));
+    gap: 15px;
 }
 
 .Pokedex_pagina1 {
@@ -28,8 +36,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
     font-family: fantasy;
-    letter-spacing: 30px;
+    letter-spacing: 25px;
    cursor: pointer;
 }
 

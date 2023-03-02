@@ -28,9 +28,9 @@ const Pokedex = () => {
         <button className='Pokedex_search'>Search</button>
       </div >
       <select Pokedex_search onChange={handleChangeSelect} >  
-        <option  Pokedex_search value="">All</option>
+        <option className='Pokedex_search1' Pokedex_search value="">All</option>
         {
-           types.map(type => <option  key={type.url}>  {type.name}</option>)
+           types.map(type => <option  className='Pokedex_search1' key={type.url}>  {type.name}</option>)
         }
       </select>
     </form>

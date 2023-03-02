@@ -15,7 +15,6 @@ const Pokemon = () => {
 
   useEffect(() => {
     const URL = `https://pokeapi.co/api/v2/pokemon/${id}/?limit=1154`
-    //  const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
     axios.get(URL)
     .then((res) => setPokemon(res.data))
     .catch((err) => console.log(err))
@@ -34,7 +33,7 @@ const Pokemon = () => {
     </section>
     
        {/* parte inferior o body*/}
-    <section >
+    <section className='pokemon_color'>
     <h2 className='pokemon_stats-title'># {pokemon?.id}</h2>
     <h2 className='pokemon_stats-title'>{pokemon?.name}</h2> 
 

@@ -1,9 +1,13 @@
 .Pokemon {
-    background-color: rgb(83, 236, 239);
+    background-color: rgb(159, 232, 235);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.pokemon_color {
+  background-color: rgb(159, 232, 235);
 }
 
 .pokemon_stats-title {
@@ -15,12 +19,13 @@ text-transform: capitalize;
 }
 
 .pokemon_box1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    font-size: 18px;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  font-size: 18px;
+
     
 }
 
@@ -28,7 +33,7 @@ text-transform: capitalize;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 200px;
+    padding: 100px;
 }
 
 .pokemon_rigth {
@@ -85,22 +90,16 @@ text-transform: capitalize;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px 50px;
-    background-color: rgb(79, 214, 237);
+    background-color:  rgb(91, 238, 243);;
   }
   
-
-.Pokemon_title1{
-    background-color: white;
-}
-
-
 .pokemon_stat-barGray {
-    background-color: #daf3aa;
+    background-color: rgb(219, 219, 37);
     height: 25px;
 }
 
 .pokemon_stat-barProgress {
-    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+    background: linear-gradient(90deg, #c0ef05 -2.25%, #2ce344 133.18%);
     height: 25px;
     width: 50%;
     border-top-right-radius: 5px;

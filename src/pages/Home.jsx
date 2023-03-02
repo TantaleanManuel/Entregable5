@@ -15,7 +15,7 @@ const Home = () => {
   };
 
   return (
-    <main>
+    <main >
       <section className='Home'>
         <div Home_img >
           <img src="/images/pokedex.png" alt="" />
