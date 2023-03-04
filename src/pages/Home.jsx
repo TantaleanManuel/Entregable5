@@ -17,20 +17,20 @@ const Home = () => {
   return (
     <main >
       <section className='Home'>
-        <div Home_img >
-          <img src="/images/pokedex.png" alt="" />
+        <div className='img' >
+          <img   src="/images/pokedex.png" alt="" />
           </div>
-          <h2 className='Home_greeting'>Hello trainer!</h2>
-          <p className='Home_mensaje'>Give me your name to start!</p>
-          <form className='Home_form' onSubmit={handleSubmit}>
-            <input  className='Home_input' required
+          <h2 >Hello trainer!</h2>
+          <p >Give me your name to start!</p>
+          <form  onSubmit={handleSubmit}>
+            <input  required
             id="nameTrainer" 
             type="text" 
             placeholder='your name...'
             />
             <button className='Home_buttom'>Start</button>
           </form>
-          <footer className='Home_foot'></footer>
+          <footer  ></footer>
       </section>
 
     </main>

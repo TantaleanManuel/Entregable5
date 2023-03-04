@@ -1,24 +1,28 @@
-body{
-    background-color: rgb(159, 232, 235);
-}
 .Home{
-    background-color: rgba(255, 255, 0, 0.759);
-    margin-top: 300px;
-    margin: 150px 150px;
-    border-color: #dd1a1a;
-}
+    /* background-color: #dd1a1a; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    justify-content: center;
+    margin-top: 150px;
+    padding-left: 200px;
+    margin-right: 50px;
+    height: 30vh;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 270px;}
 
-.Home_mensaje {
-    font-size: 20px;
-    font-family: Impact;
-    font-style: italic;
-    color: black;
+.img {
+    max-width: 200%;
+    max-height: 100%;
 }
 
 .Home_img {
-    width: min(270px, calc(100% -20px)) ;
-    position: absolute;
-    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .Home_greeting{
@@ -37,7 +41,7 @@ body{
 
 .Home_buttom{
     padding: 6px 20px;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 4px;
     background-color:black;
     color: #fff;
@@ -50,6 +54,6 @@ body{
 
 .Home_foot {
     height:100px ;
-    background-color: #dd1a1a ;
+    background-color: white ;
     position: relative;
 }

@@ -22,18 +22,20 @@ const Pokedex = () => {
   return (
     <main  style={{maxWidth: "1400px", margin:"20px auto" }}>
     <p className='Pokedex_mensaje' ><span> Welcome {nameTrainer},</span> here you can find information about your favorite pokemon</p>
-    <form onSubmit={handleSubmit}>
-      <div>
-      <input className='Pokedex_search' type="text" id='pokemonName' placeholder='search your pokemon' />
-        <button className='Pokedex_search'>Search</button>
-      </div >
-      <select Pokedex_search onChange={handleChangeSelect} >  
-        <option className='Pokedex_search1' Pokedex_search value="">All</option>
+    <form className='caja' onSubmit={handleSubmit}>
+      <div className='caja1'>
+        <input  type="text" id='pokemonName' placeholder='search your pokemon' />
+        <button>Search</button>
+      </div  >
+      <select className='caja2' Pokedex_search onChange={handleChangeSelect} >  
+        <option  Pokedex_search value="">All</option>
         {
-           types.map(type => <option  className='Pokedex_search1' key={type.url}>  {type.name}</option>)
+           types.map(type => <option   key={type.url}>  {type.name}</option>)
         }
       </select>
     </form>
+
+
       <section className='Pokedex_pagina'>
       {  
         pokemonsInPage.map(pokemon => <PokemonCard key={pokemon.url} pokemonUrl={pokemon.url} />)

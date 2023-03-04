@@ -3,17 +3,38 @@
     font-size: large;
 }
 
+.caja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.caja1 {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.caja2 {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium';
+    color: black;
+} 
+}
+
+
+
 .Pokedex_search{
     font-size: 18px;
     font-family: 'Franklin Gothic Medium';
     color: black;
 }
 
-.Pokedex_search1 {
-    font-size: 15px;
-    font-family: Impact;
-    color: black;
-}
+
 .Pokedex_pagina {
     display: grid;
     grid-auto-columns: auto;
@@ -36,6 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     gap: 15px;
     font-family: fantasy;
     letter-spacing: 25px;
